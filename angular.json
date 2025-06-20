@@ -32,9 +32,11 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/aos/dist/aos.css",
+  "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [ "node_modules/aos/dist/aos.js"
+],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -103,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "434fa70c-30b0-43a1-8e96-53c9500b8f9e"
   }
 }

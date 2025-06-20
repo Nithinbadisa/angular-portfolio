@@ -1,0 +1,291 @@
+.home-wrapper {
+  padding-top: 5rem;
+
+    .section {
+    padding: 4rem 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(10, 25, 47, 0.95);
+    color: #ffffff;
+  }
+  .section-about {
+    background-image: url('../../assests/depositphotos_394617890-stock-photo-dot-white-blue-wave-light.jpg');
+  }
+
+  .section-experience {
+    background-image: url('../../assests/images.jfif');
+  }
+
+  .section-projects {
+    background-image: url('../../assests/dark-grey-black-textured-concrete-background-photo.jpg');
+  }
+
+  .section-skills {
+    background-image: url('../../assests/skills.jpg');
+  }
+
+  .section-education {
+    background-image: url('../../assests/education.jpg');
+  }
+
+
+  .section-contact {
+    background-image: url('../../assests/contact.jpg');
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #64ffda;
+  }
+
+  p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background: url('../../assests/Businessman-In-Suit-Free-PNG.png') no-repeat right center;
+  color: #ccd6f6;
+background-size: 350px right;
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1;
+
+    .text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      padding-right: 1rem;
+
+      .intro {
+        font-size: 1rem;
+        color: #64ffda;
+        margin-bottom: 0.5rem;
+      }
+      .name {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      .tagline {
+        font-size: 2rem;
+        color: #8892b0;
+        margin: 1rem 0;
+      }
+      .description {
+        font-size: 1rem;
+        color: #a8b2d1;
+        line-height: 1.6;
+      }
+      .cta-button {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.75rem 2rem;
+        border: 1px solid #64ffda;
+        color: #64ffda;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: rgba(100, 255, 218, 0.1);
+        }
+      }
+    }
+
+    .image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 250px;
+
+      img {
+        max-width: 300px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.section-projects .project {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  transition: transform 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    color: #64ffda;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: #ccd6f6;
+  }
+}
+
+.section-experience {
+  .experience-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    h3 {
+      color: #64ffda;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+
+      span {
+        font-size: 0.9rem;
+        font-weight: normal;
+        color: #8892b0;
+      }
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+      color: #ccd6f6;
+    }
+  }
+}
+
+.section-skills {
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .skill-category {
+    flex: 1 1 300px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    h3 {
+      color: #64ffda;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.5rem 0;
+        color: #ccd6f6;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.section-education, .section-contact {
+  .section-header {
+    margin-bottom: 2rem;
+
+    h2 {
+      color: #64ffda;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #ccd6f6;
+      font-size: 1rem;
+    }
+  }
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .education-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+
+    h3 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 1.1rem;
+    }
+
+    .institution {
+      color: #8892b0;
+      font-size: 0.95rem;
+    }
+
+    .year {
+      float: right;
+      color: #64ffda;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.contact-info {
+  .contact-item {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #ccd6f6;
+
+    a {
+      color: #64ffda;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
